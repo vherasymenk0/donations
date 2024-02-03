@@ -3,7 +3,7 @@ import { TypographyOptions } from '@mui/material/styles/createTypography'
 import { breakpoints } from './breakpoints'
 
 export const typography: TypographyOptions = {
-  fontFamily: 'Red Hat Display',
+  fontFamily: 'Inter',
   h1: {
     fontWeight: 700,
 
