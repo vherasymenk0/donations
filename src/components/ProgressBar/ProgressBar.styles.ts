@@ -5,6 +5,7 @@ export const useStyles = makeSxStyles(({ palette }) => ({
     height: '10px',
     borderRadius: 1,
     backgroundColor: palette.success.light,
+
     '& > .MuiLinearProgress-bar': {
       backgroundColor: palette.success.main,
     },

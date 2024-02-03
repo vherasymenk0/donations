@@ -87,6 +87,7 @@ declare module '@mui/material/styles' {
     body3: React.CSSProperties
     body4: React.CSSProperties
     body5: React.CSSProperties
+    body6: React.CSSProperties
     button1: React.CSSProperties
     button2: React.CSSProperties
   }
@@ -97,6 +98,7 @@ declare module '@mui/material/styles' {
     body3?: React.CSSProperties
     body4?: React.CSSProperties
     body5?: React.CSSProperties
+    body6?: React.CSSProperties
     button1?: React.CSSProperties
     button2?: React.CSSProperties
   }
@@ -109,6 +111,7 @@ declare module '@mui/material/Typography' {
     body3: true
     body4: true
     body5: true
+    body6: true
     button1: true
     button2: true
   }
