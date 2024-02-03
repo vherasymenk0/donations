@@ -108,6 +108,23 @@ export const typography: TypographyOptions = {
       lineHeight: '20px',
     },
   },
+  subtitle3: {
+    fontWeight: 600,
+    lineHeight: '22px',
+
+    [`@media (min-width: ${breakpoints.values.md}px)`]: {
+      fontSize: 18,
+    },
+
+    [`@media (max-width: ${breakpoints.values.md}px)`]: {
+      fontSize: 16,
+    },
+  },
+  subtitle4: {
+    fontWeight: 500,
+    fontSize: 16,
+    lineHeight: '20px',
+  },
 
   body1: {
     fontWeight: 400,
@@ -133,6 +150,43 @@ export const typography: TypographyOptions = {
     [`@media (max-width: ${breakpoints.values.md}px)`]: {
       fontSize: 18,
       lineHeight: '24px',
+    },
+  },
+  body3: {
+    fontWeight: 400,
+
+    [`@media (min-width: ${breakpoints.values.md}px)`]: {
+      fontSize: 18,
+      lineHeight: '26px',
+    },
+
+    [`@media (max-width: ${breakpoints.values.md}px)`]: {
+      fontSize: 16,
+      lineHeight: '22px',
+    },
+  },
+  body4: {
+    fontWeight: 400,
+    fontSize: 16,
+
+    [`@media (min-width: ${breakpoints.values.md}px)`]: {
+      lineHeight: '24px',
+    },
+
+    [`@media (max-width: ${breakpoints.values.md}px)`]: {
+      lineHeight: '22px',
+    },
+  },
+  body5: {
+    fontWeight: 400,
+    fontSize: 14,
+
+    [`@media (min-width: ${breakpoints.values.md}px)`]: {
+      lineHeight: '22px',
+    },
+
+    [`@media (max-width: ${breakpoints.values.md}px)`]: {
+      lineHeight: '20px',
     },
   },
 }
