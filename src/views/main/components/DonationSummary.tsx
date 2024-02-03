@@ -26,14 +26,23 @@ export const DonationSummary = ({ lastDate, currentValue, targetValue, isMobile 
   return (
     <Stack gap={1} my={2} width={isMobile ? '100%' : '70%'}>
       {isMobile ? (
-        <Text variant="subtitle4" color="success.dark" textAlign="center">
-          {currentCurrencyValue} з {targetCurrencyValue}
-        </Text>
+        <Stack>
+          <Text variant="subtitle4" color="grey.900" textAlign="center">
+            {currentCurrencyValue} з {targetCurrencyValue}
+          </Text>
+          <Text variant="body5" color="grey.900" textAlign="center">
+            (останнє оновлення сьогодні о {formattedTime})
+          </Text>
+        </Stack>
       ) : (
-        <Text variant="body3" color="success.dark" textAlign="center">
-          Станом на сьогодні о {formattedTime} зібрано {currentCurrencyValue} з{' '}
-          {targetCurrencyValue}
-        </Text>
+        <Stack>
+          <Text variant="body3" color="grey.900" textAlign="center">
+            Зібрано {currentCurrencyValue} з {targetCurrencyValue}{' '}
+          </Text>
+          <Text variant="body5" color="grey.900" textAlign="center">
+            (останнє оновлення сьогодні о {formattedTime})
+          </Text>
+        </Stack>
       )}
 
       <ProgressBar value={currentValue} maxValue={targetValue} />

@@ -42,7 +42,7 @@ export const MobileListItem = ({
           <DescriptionText variant="body5" text={description} />
         </Stack>
         <Stack sx={styles.moreInfo} onClick={handleOpen}>
-          <Text variant="body5" color="primary.main" textAlign="center">
+          <Text variant="body5" color="grey.900" textAlign="center">
             (тицяй сюди для повної інформації)
           </Text>
         </Stack>
@@ -75,7 +75,7 @@ export const MobileListItem = ({
               <PublicationDate date={date} />
             </Text>
 
-            <Stack sx={{ maxHeight: '400px', overflowY: 'scroll' }}>
+            <Stack sx={styles.content}>
               <DescriptionText text={text} textAlign="left" />
               <Stack flexDirection="row" justifyContent="flex-end" mt={0.5}>
                 <Link href={messageLink} variant="body6">

@@ -20,9 +20,14 @@ export const useStyles = makeSxStyles(({ palette, typography }) => ({
   },
   moreInfo: {
     justifyContent: 'center',
-    backgroundColor: palette.primary['500'],
+    backgroundColor: palette.grey['200'],
     px: 2,
     py: 2,
+  },
+  content: {
+    maxHeight: 300,
+    overflowY: 'scroll',
+    my: 2,
   },
   modal: {
     display: 'flex',
@@ -52,6 +57,7 @@ export const useStyles = makeSxStyles(({ palette, typography }) => ({
   btn: {
     backgroundColor: palette.secondary.main,
     height: 40,
+    mt: 1,
 
     a: {
       ...typography.body4,

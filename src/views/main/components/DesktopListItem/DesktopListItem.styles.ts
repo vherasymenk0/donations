@@ -27,7 +27,7 @@ export const useStyles = makeSxStyles(({ typography }) => ({
     p: 0,
   },
   btn: {
-    mt: 1,
+    mt: 1.5,
     width: 300,
     a: {
       ...typography.body4,
