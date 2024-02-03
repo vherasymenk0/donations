@@ -1,13 +1,13 @@
 import { Stack } from '@mui/material'
 
-import List from './components/List'
 import ThemeRegistry from './providers/ThemeRegistry'
 import { palette } from './theme/palette'
+import { MainView } from './views/main'
 
 const App = () => (
   <ThemeRegistry>
-    <Stack component="main" sx={{ backgroundColor: palette.primary['600'], height: '100%' }}>
-      <List />
+    <Stack component="main" sx={{ backgroundColor: palette.grey['300'], height: '100%' }}>
+      <MainView />
     </Stack>
   </ThemeRegistry>
 )
