@@ -1,5 +1,4 @@
 import { Text } from '../../../components/Text'
-import moment from 'moment/moment'
 import { ProgressBar } from '../../../components/ProgressBar'
 import { numberToCurrency } from '../../../helpers/numberToCurrency'
 import { Stack } from '@mui/material'
@@ -12,9 +11,17 @@ interface Props {
 }
 
 export const DonationSummary = ({ lastDate, currentValue, targetValue, isMobile }: Props) => {
-  const formattedLastDate = moment(new Date(lastDate)).calendar().toLowerCase()
-  const currentCurrencyValue = numberToCurrency(currentValue)
-  const targetCurrencyValue = numberToCurrency(targetValue)
+  const date = new Date(lastDate)
+  const locale = 'uk-UA'
+
+  const formattedTime = new Intl.DateTimeFormat(locale, {
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: false,
+  }).format(date)
+
+  const currentCurrencyValue = numberToCurrency(currentValue / 100)
+  const targetCurrencyValue = numberToCurrency(targetValue / 100)
 
   return (
     <Stack gap={1} my={2} width={isMobile ? '100%' : '70%'}>
@@ -24,7 +31,8 @@ export const DonationSummary = ({ lastDate, currentValue, targetValue, isMobile 
         </Text>
       ) : (
         <Text variant="body3" color="success.dark" textAlign="center">
-          Cтаном на {formattedLastDate} зібрано {currentCurrencyValue} з {targetCurrencyValue}
+          Станом на сьогодні о {formattedTime} зібрано {currentCurrencyValue} з{' '}
+          {targetCurrencyValue}
         </Text>
       )}
 
