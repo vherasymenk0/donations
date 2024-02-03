@@ -189,4 +189,16 @@ export const typography: TypographyOptions = {
       lineHeight: '20px',
     },
   },
+  body6: {
+    fontWeight: 400,
+    fontSize: 12,
+
+    [`@media (min-width: ${breakpoints.values.md}px)`]: {
+      lineHeight: '20px',
+    },
+
+    [`@media (max-width: ${breakpoints.values.md}px)`]: {
+      lineHeight: '18px',
+    },
+  },
 }
