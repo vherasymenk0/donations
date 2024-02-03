@@ -44,7 +44,7 @@ export const DesktopListItem = ({
               variant="subtitle3"
               color="primary.main"
             >
-              Посилання на банку
+              Посилання на monoбанку
             </Link>
           </Stack>
 
@@ -84,7 +84,7 @@ export const DesktopListItem = ({
           />
           <Button variant="contained" color="secondary" sx={styles.btn}>
             <a href={`https://send.monobank.ua/jar/${jarId}`} target="_blank" rel="noreferrer">
-              поповнити банку
+              поповнити monoбанку
             </a>
           </Button>
         </Stack>

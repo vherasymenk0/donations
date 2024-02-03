@@ -37,7 +37,7 @@ export const MobileListItem = ({
             {name}
           </Text>
           <a href={`https://send.monobank.ua/jar/${jarId}`} target="_blank" rel="noreferrer">
-            Посилання на банку
+            Посилання на monoбанку
           </a>
           <DescriptionText variant="body5" text={description} />
         </Stack>
@@ -93,7 +93,7 @@ export const MobileListItem = ({
 
             <Button variant="contained" sx={styles.btn}>
               <a href={`https://send.monobank.ua/jar/${jarId}`} target="_blank" rel="noreferrer">
-                поповнити банку
+                поповнити monoбанку
               </a>
             </Button>
           </Stack>
