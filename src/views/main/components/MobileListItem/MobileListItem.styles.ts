@@ -2,6 +2,7 @@ import { makeSxStyles } from '../../../../helpers/makeSxStyles'
 
 export const useStyles = makeSxStyles(({ palette, typography }) => ({
   paper: {
+    position: 'relative',
     mb: 2,
     overflow: 'hidden',
     border: 'none',
@@ -41,8 +42,18 @@ export const useStyles = makeSxStyles(({ palette, typography }) => ({
     '&:focus': {
       outline: 'none',
     },
+  },
+  closeBtn: {
+    position: 'absolute',
+    p: 0,
+    right: 25,
+    top: 27,
+  },
+  btn: {
+    backgroundColor: palette.secondary.main,
+    height: 40,
 
-    '& button > a': {
+    a: {
       ...typography.body4,
       fontWeight: 500,
       color: 'inherit',
