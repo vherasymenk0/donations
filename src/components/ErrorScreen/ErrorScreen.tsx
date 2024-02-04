@@ -11,10 +11,10 @@ export const ErrorScreen = () => {
       sx={{ transform: 'translate(-50%, -50%)' }}
     >
       <Stack alignItems="center">
-        <Text variant="h5" color="error.main" mb={2}>
+        <Text variant="h5" color="primary.main" mb={2}>
           Щось пішло не так :(
         </Text>
-        <Text variant="subtitle2" color="error.main" mb={2}>
+        <Text variant="subtitle2" color="primary.main" mb={2}>
           Спробуйте трішки пізніше
         </Text>
       </Stack>
