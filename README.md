@@ -1,7 +1,7 @@
 ### `yarn dev`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
@@ -19,4 +19,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn start build`
 
-Runs the build version on port 3000
+Runs the build version on the port 5000.
+[http://localhost:5000](http://localhost:5000)
