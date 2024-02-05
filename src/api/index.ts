@@ -5,8 +5,6 @@ export const getJarsList = async () => {
 
   try {
     const res = await fetch(`${process.env.REACT_APP_API_URL}/jars`);
-    console.log(await res.text());
-    
 
     jarsList = (await res.json()) as JarModel[]
   } catch (e) {
